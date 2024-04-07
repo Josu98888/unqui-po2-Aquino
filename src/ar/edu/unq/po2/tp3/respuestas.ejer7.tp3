@@ -1,0 +1,23 @@
+
+javac -d bin src/model/MyClass.java
+javac -d bin src/model/gui/MyGUIClass.java
+javac -d bin src/model/stack/MyStackClass.java
+
+1. ¿Cómo están organizadas en el sistema de archivos?
+ Los archivos fuente de las clases Java se encuentran en el directorio src.
+ La estructura de directorios dentro de src refleja la estructura de paquetes de las clases.
+ Cada subdirectorio dentro de src corresponde a un componente del nombre del paquete.
+ Por ejemplo, si tienes una clase llamada MyClass en el paquete model, el archivo fuente de esta
+clase (MyClass.java) estará ubicado en src/model/.
+ De manera similar, si tienes una clase llamada MyGUIClass en el paquete model.gui, el archivo 
+fuente de esta clase estará ubicado en src/model/gui/.
+
+¿Encuentra alguna relación entre el nombre del paquete y la ubicación de los archivos fuentes de las
+clases (.java) y los archivos compilados (.class)?
+ Sí, hay una relación directa entre el nombre del paquete y dónde se encuentran los archivos fuente 
+(.java) y los archivos compilados (.class) en el sistema de archivos
+ Cuando creas una clase en Java y la pones en un paquete, el nombre del paquete indica dónde se encuentra
+el archivo de esa clase.
+ Por ejemplo, si tienes una clase llamada MyClass en el paquete model, su archivo Java (.java) se ubicará 
+ dentro de una carpeta llamada model.
+ Después de compilar la clase, el archivo compilado (.class) de MyClass se colocará en la misma carpeta model.

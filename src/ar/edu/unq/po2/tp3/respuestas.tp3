@@ -1,0 +1,57 @@
+ejer.4_
+Dado el siguiente código:
+String a = "abc";
+String s = a;
+String t;
+
+Indique que valores retornan las siguientes expresiones o, si dan error, por 
+qué se producen:
+
+● s.length();
+ El resultado es 3, ya que la longitud de la cadena
+ "abc" es 3 caracteres y s sigue siendo una referencia a la misma cadena
+ 
+● t.length(); 
+ Dio un NullPointerException porque la variable t fue declarada pero no 
+inicializada explícitamente con un valor antes de llamar a t.length().
+
+● 1 + a;
+ Se obtuvo un error de compilación en Java porque el operador + no está definido
+ para sumar un número entero (1) con una cadena (a). 
+ 
+● a.toUpperCase();
+ Si llamas a a.toUpperCase(); solo estarás convirtiendo todos los caracteres de
+ la cadena a a mayúsculas, en este caso retorno "ABC".
+ 
+● "Libertad".indexOf("r");
+En el caso de "Libertad".indexOf("r"), la cadena "Libertad" se busca en busca del
+ carácter "r". Como "r" se encuentra en la posición 2 de la cadena (contando desde 0)
+ , el método indexOf() devolverá 4.
+
+● "Universidad".lastIndexOf('i');
+ El método lastIndexOf() en Java se utiliza para encontrar la posición de la última 
+aparición de un carácter o una subcadena dentro de una cadena. En el caso de "Universidad"
+.lastIndexOf('i'), estamos buscando el carácter 'i' en la cadena "Universidad". 
+Como la última ocurrencia de 'i' está en la posición 7 (contando desde 0), el método lastIndexOf() devolverá 7.
+
+● "Quilmes".substring(2,4);
+El método substring() en Java se utiliza para extraer una parte de una cadena. Toma dos parámetros: el índice 
+inicial (inclusive) y el índice final (exclusivo) de la subcadena que se desea extraer.
+En el caso de "Quilmes".substring(2, 4), estamos extrayendo una subcadena que comienza en el índice 2 
+(que corresponde a la letra "i") y termina en el índice 4 (que corresponde a la letra "m"), pero el
+ índice final es exclusivo, por lo que la subcadena incluirá los caracteres en los índices 2 y 3. 
+ Por lo tanto, el resultado será "il".
+ 
+● (a.length() + a).startsWith("a");
+La expresión a.length() + a concatena la longitud de la cadena a con la cadena a misma. Luego, 
+.startsWith("a") se utiliza para verificar si la cadena resultante comienza con el carácter "a".
+ En este caso dara false ya que comienza con el numero 3.
+ 
+● s == a;
+La expresión s == a compara las referencias de los objetos, no los valores de las cadenas.
+ Devolverá true si s y a apuntan al mismo objeto en la memoria. En este caso dara true 
+ ya que apuntan a la misma referencia.
+ 
+● a.substring(1,3).equals("bc")
+En resumen, la expresión a.substring(1, 3).equals("bc") verifica si los caracteres en las 
+posiciones 1 y 2 de la cadena a son iguales a "bc". En este caso da true.
