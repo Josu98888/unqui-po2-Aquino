@@ -4,7 +4,7 @@ public class Point {
 	private int x ;
 	private int y ;
 	
-	// Constructor para crear un punto en las coordenadas (0,0)
+	// Constructor para crear un punto en las coordenadas(0,0)
     public Point() {
         this.x = 0;
         this.y = 0;
