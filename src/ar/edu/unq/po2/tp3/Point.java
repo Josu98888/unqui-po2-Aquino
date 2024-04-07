@@ -11,11 +11,16 @@ public class Point {
     }
     
 	public Point(int x, int y) {
-		super();
 		this.x = x;
 		this.y = y;
 	}
 	
+	public int getX() {
+		return x ;
+	}
+	public int getY() {
+		return y ;
+	}
 	public void mover(int newX, int newY) {
         this.x = newX;
         this.y = newY;
