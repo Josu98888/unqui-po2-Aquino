@@ -1,0 +1,12 @@
+1. Responder: Si un objeto cualquiera que le pide la edad a una Persona: ¿Conoce cómo ésta calcula u
+obtiene tal valor? ¿Cómo se llama el mecanismo de abstracción que permite esto?
+
+ Cuando un objeto cualquiera llama al método getEdad() de la clase Persona, no necesita conocer los 
+detalles de cómo se calcula la edad. Solo necesita saber que puede llamar a ese método y obtener el 
+resultado deseado, en este caso, la edad de la persona.
+
+Este mecanismo se llama abstracción. La abstracción en programación orientada a objetos permite a los 
+objetos interactuar entre sí a través de una interfaz bien definida, sin necesidad de conocer los detalles
+ internos de cómo se implementa esa funcionalidad. 
+ 
+ 
